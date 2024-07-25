@@ -1,8 +1,6 @@
 import React from 'react';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
-import client from './apolloClient';
-import './App.css';
-import { Outlet } from 'react-router-dom';
+import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
@@ -41,7 +39,6 @@ function App() {
         </>
       </Router>
     </ApolloProvider>
-    
   );
 }
 
