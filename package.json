@@ -17,6 +17,8 @@
     "concurrently": "^8.2.0"
   },
   "dependencies": {
+    "@apollo/server": "^4.10.5",
+    "apollo-server-express": "^3.13.0",
     "jwt-decode": "^4.0.0",
     "react-bootstrap": "^2.10.4",
     "vite": "^5.3.4"

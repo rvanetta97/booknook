@@ -1,4 +1,4 @@
-const typeDefs = gql`
+const typeDefs = `
   type Book {
     authors: String
     description: String!
